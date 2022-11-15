@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in)  ;
+
+        //Q1
+        System.out.println("enter number: ");
+        int num = input.nextInt() ;
+        if ( num > 0 )
+            System.out.println("positive number ") ;
+        else if ( num < 0 )
+            System.out.println("negative number ") ;
+        else
+            System.out.println(" your number is equal to 0 ") ;
+
+        //Q2
+        System.out.println("enter your name: ");
+        String str = input.nextLine();
+        System.out.println("enter number:");
+        int loc = input.nextInt();
+        System.out.println(str.charAt(loc) );
+
+        //Q3
+        char ch = input.next().charAt(0);
+        System.out.println(str.contains(ch) );
+
+        
+
+
+    }
+}
